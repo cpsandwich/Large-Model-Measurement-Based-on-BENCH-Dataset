@@ -1,0 +1,69 @@
+
+# Evaluation of Large Language Models on the Bench Dataset
+
+Welcome to our project! We are dedicated to evaluating various large language models using the Bench dataset. This repository provides a comprehensive analysis of models like GPT-4o, GPT-4o mini, and GPT-3.5-turbo, focusing on their performance across different academic disciplines. Whether you're a researcher, developer, or simply curious about the capabilities of these models, we hope you find this project insightful.
+
+## Project Overview
+
+In this project, we rigorously evaluated three prominent language models: GPT-4o, GPT-4o mini, and GPT-3.5-turbo. Our analysis primarily focused on objective questions across multiple subjects such as Chinese, Mathematics, Physics, and more. The findings aim to provide clear benchmarks for these models' capabilities.
+
+## Key Findings
+
+- **Overall Performance**:
+  - **GPT-4o**: Demonstrated the strongest overall performance with a score of 82.2%.
+  - **GPT-4o mini**: Followed closely with a respectable 71.6%.
+  - **GPT-3.5-turbo**: Scored 53.2%, showing room for improvement.
+
+- **Subject-Specific Highlights**:
+  - **Chinese**: GPT-4o excelled, scoring 63.9%, significantly higher than GPT-3.5-turbo’s 34.7%.
+  - **English**: Both GPT-4o mini (93.2%) and GPT-4o (93.1%) showed exceptional proficiency.
+  - **Science and Mathematics**: GPT-4o led in scientific disciplines, scoring 63.7% in Science and 69.3% in Mathematics.
+  - **Physics**: GPT-4o continued to dominate with a score of 61.5%.
+
+## Getting Started
+
+### Clone the Repository
+
+Start by cloning this repository to your local machine:
+
+```bash
+git clone https://github.com/OpenLMLab/GAOKAO-Bench.git
+```
+
+### Install Dependencies
+
+Make sure you have Python and Pip installed. Then, navigate to the project directory and install the necessary dependencies:
+
+```bash
+cd GAOKAO-Bench
+pip install numpy pandas scikit-learn openai
+```
+
+### Configure Linux Terminal (for Windows Users)
+
+If you're on Windows, you might need to set up WSL (Windows Subsystem for Linux) to run certain scripts:
+
+```bash
+wsl --install
+```
+
+### Configure OpenAI API
+
+Retrieve your OpenAI API key and endpoint from Azure AI Studio, and update the project files accordingly. In the `openai_gpt4.py` file, make sure to adjust the API calls and include the endpoint and API key parameters.
+
+## Running the Evaluation
+
+Ready to see the models in action? Simply run the following command in your Linux terminal:
+
+```bash
+cd /mnt/c/Users/your-username/GAOKAO-Bench-main/Bench/
+python3 objective_bench.py --openai_api_key <your api key>
+```
+
+## Results Analysis
+
+Our analysis revealed the following:
+
+- **GPT-4o**: Consistently outperformed the other models, particularly in Biology and Geography.
+- **GPT-4o mini**: Also showed strong results, especially in scientific subjects.
+- **GPT-3.5-turbo**: While it had some strengths, it generally lagged behind in subjects like Chinese and Science.
